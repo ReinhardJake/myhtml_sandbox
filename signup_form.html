@@ -62,26 +62,26 @@
         <h1>Sign Up</h1>
         <form action="#" method="post">
             <div class="form-group">
-                <label for="fullname">First Name:</label>
-                <input type="text" id="fullname" name="fullname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
             </div>
             <div class="form-group">
-                <label for="fullname">Last Name:</label>
-                <input type="text" id="fullname" name="fullname">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name">
             </div>
             <div class="form-group">
-                <label for="fullname">Middle Name:</label>
-                <input type="text" id="fullname" name="fullname">
+                <label for="midname">Middle Name:</label>
+                <input type="text" id="midname" name="midname" placeholder="Middle Name">
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" placeholder="Email">
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" 
                        pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$" 
-                       title="Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character (!@#$%^&*).">
+                       title="Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character (!@#$%^&*)." placeholder="Password" min="8" required>
                 <small>Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character (!@#$%^&*).</small>
             </div>
             <button type="submit">Sign Up</button>

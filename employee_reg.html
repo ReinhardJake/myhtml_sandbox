@@ -101,8 +101,30 @@
                 <label for="office">Office:</label>
                 <input type="text" id="office" required>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" id="btn1">Submit</button>
         </form>
     </div>
+
+    <script>
+
+        const lname = document.getElementById("last_name");
+        const fname = document.getElementById("first_name");
+        const mname = document.getElementById("middle_name");
+        const bday = document.getElementById("birthdate");
+        const dep = document.getElementById("department");
+        const office = document.getElementById("office");
+        const out1 = document.getElementById("btn1");
+
+        function displayConsole () {
+            console.log("Last name: " + lname);
+            console.log("First name: " + fname);
+            console.log("Middle name: " + mname);
+            console.log("Birthdate: " + bday);
+            console.log("Department: " + dep);
+            console.log("Office: " + office);
+        }
+
+        out1.addEventListener('submit',displayConsole);
+    </script>
 </body>
 </html>
