@@ -104,27 +104,20 @@
             <button type="submit" id="btn1">Submit</button>
         </form>
         
-        <script>
+        <!-- JavaScript to capture form submission -->
+<script>
 
-            const lname = document.getElementById("last_name");
-            const fname = document.getElementById("first_name");
-            const mname = document.getElementById("middle_name");
-            const bday = document.getElementById("birthdate");
-            const dep = document.getElementById("department");
-            const office = document.getElementById("office");
-            const out1 = document.getElementById("btn1");
-    
-            function displayConsole () {
-                console.log("Last name: " + lname);
-                console.log("First name: " + fname);
-                console.log("Middle name: " + mname);
-                console.log("Birthdate: " + bday);
-                console.log("Department: " + dep);
-                console.log("Office: " + office);
-            }
-    
-            out1.addEventListener('submit',displayConsole());
-        </script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+     event.preventDefault(); // Prevent the form from actually submitting
+     // Access and display form data
+     var form = event.target;
+     var formData = new FormData(form);
+     // Iterate through form data and log it (for debugging)
+     for (var pair of formData.entries()) {
+     console.log(pair[0] + ": " + pair[1]);
+     }
+     });
+     </script>
 
     </div>
 </body>
